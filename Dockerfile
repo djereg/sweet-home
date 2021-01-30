@@ -1,4 +1,4 @@
-FROM node:lts as build
+FROM node:lts-slim as build
 
 COPY . .
 RUN yarn install --prod --no-progress --non-interactive
